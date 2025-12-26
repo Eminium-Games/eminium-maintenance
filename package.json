@@ -8,8 +8,7 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
-    "postinstall": "yarn check --verify-tree || (yarn install --check-files && yarn check --verify-tree)",
-    "prestart": "yarn run build"
+    "postinstall": "yarn install --check-files"
   },
   "engines": {
     "node": ">=18.0.0",
