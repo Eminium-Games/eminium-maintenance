@@ -12,7 +12,7 @@
     "noUnusedLocals": true,
     "noImplicitAny": false,
     "sourceMap": true,
-    "lib": ["ESNext"],
+    "lib": ["ES2020", "DOM"],
     "strictNullChecks": false
   },
   "compileOnSave": true,
