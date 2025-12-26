@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 const api = express.Router();
 
 api.get('/maintenance', (req, res) => {
-  res.status(200).send({ maintenance: false });
+  res.status(200).send({ maintenance: true });
 });
 
 // Version the api
