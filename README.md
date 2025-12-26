@@ -11,9 +11,9 @@ This example starts an [ExpressJS](https://expressjs.com/) server written in [Ty
 
 ## 💁‍♀️ How to use
 
-- Install dependencies `yarn`
+- Install dependencies `npm install`
 - Connect to your Railway project `railway link`
-- Start the development server `railway run yarn dev`
+- Start the development server `railway run npm run dev`
 
 ## 📝 Notes
 

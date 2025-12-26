@@ -5,22 +5,19 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copiez les fichiers de configuration
-COPY package.json yarn.lock .yarnrc ./
-
-# Installez Yarn globalement
-RUN npm install -g yarn
+COPY package*.json ./
 
 # Installez les dépendances
-RUN yarn install --frozen-lockfile --network-timeout 1000000
+RUN npm ci --only=production
 
 # Copiez le reste du code source
 COPY . .
 
 # Construisez l'application
-RUN yarn build
+RUN npm run build
 
 # Exposez le port sur lequel votre application écoute
 EXPOSE 3000
 
 # Commande pour démarrer l'application
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
