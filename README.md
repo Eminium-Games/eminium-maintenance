@@ -1,3 +1,7 @@
+> [!WARNING]
+> **This website is no longer used.**  
+> Consider not using it. It will be archived
+
 # ExpressJS API Example
 
 This example starts an [ExpressJS](https://expressjs.com/) server written in [TypeScript](https://www.typescriptlang.org/).
